@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html">Inicio</a>
+            <a href="../pages/contactos.html">Contactos</a>
+            <a href="../pages/nosotros.html">Nosotros</a>
+            <a href="./registro.html">Registro</a>
+            <a href="../pages/logueo.html">Loguearse</a>
+        </nav>
+    </header>
+    <br>
+    <br>
+    <header>
+        <main>
+            <form action="./logueo.html">
+                <label for="nombre">Nombre: </label>
+                <input type="text" name="nombre" id="nombre" 
+                placeholder="Ingrese su nombre" required>
+                <br>
+                <br>
+                <label for="apellido">Apellido: </label>
+                <input type="text" name="apellido" id="apellido" 
+                placeholder="Ingrese su apellido" required>
+                <br>
+                <br>
+                <label for="dni">DNI/CUIL: </label>
+                <input type="number" name="dni" id="dni" 
+                placeholder="Ingrese su DNI" required>
+                <br>
+                <br>
+                <label for="mail">Mail: </label>
+                <input type="text" name="mail" id="mail" 
+                placeholder="Ingrese su Mail" required>
+                <br>
+                <br>
+                <label for="password">Password: </label>
+                <input type="password" name="password" pattern="[A-Za-z0-9]+" title="Ingrese solo letras y números" 
+                placeholder="Ingrese su contraseña">
+                
+                <br>
+                <br>
+                
+                <br>
+                <br>
+                <fieldset>
+                    <legend>Sexo: </legend>
+                    <label for="mujer">Mujer</label>
+                    <input type="radio" name="sexo" id="mujer" value="mujer">
+                    <label for="hombre">Hombre</label>
+                    <input type="radio" name="sexo" id="hombre" value="hombre">
+                    <label for="nobinario">No Binario</label>
+                    <input type="radio" name="sexo" id="nobinario" value="nobinario">
+                </fieldset>
+                <br>
+                <br>
+                <select name="tipodeusuario" id="">
+                    <option value="persona">Persona</option>
+                    <option value="empresa">Empresa</option>
+                </select>
+                <br>
+                <br>
+                <label for="terminos">Acepta términos y condiciones</label>
+                <input type="checkbox" name="terminos" id="terminos" value="acepto" required>
+                <br>
+                <br>
+                <button type="submit">Enviar</button>
+                <button type="reset">Resetear</button>
+            </form>
+        </main>
+    </header>
+    <br>
+    <br>
+    <br>
+    <footer>
+        <div id="info-contactos">
+            <h2>info de contacto</h2>
+            <p>Direccion: Larrea 1234, Quilmes, Buenos Aires</p>
+            <p>Tel: 0800-111-11111</p>
+            <p>Mail: soportetodoamd@gmail.com</p>
+        <br>
+        <br>
+        </div>
+        <a href="https://www.amd.com/es.html" target="_blank"><img src="../multimedia/images/logoamd.png" alt="boton amd" width="100" height="100"></a>
+
+        <img src="../multimedia/images/logoryzenradeongraphics.webp" alt="logoradeongraphics" width="200" height="100">
+        <img src="../multimedia/images/c.png" alt="Copyright" width="32" height="32">
+    </footer>
+</body>
+</html>
