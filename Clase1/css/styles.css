@@ -1,0 +1,114 @@
+
+.encabezado {
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+  
+  .encabezado img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+h1{
+    text-align: center;
+}
+
+
+
+#mapaubicacion{
+    border-radius: 50px;
+}
+
+.producto-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 5px;
+  }
+  
+  .producto {
+    width: calc(25% - 15px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #a51212;
+    border-radius: 5px;
+  }
+  
+  .producto img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .producto h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .producto p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .stockaso{
+    text-align: center;
+  }
+
+.fondotitulotabla{
+    
+        width: 50%;
+        background-image: url("../multimedia/images/amdgif.gif");
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: white;
+        padding: 20px;
+}
+
+#color-changing-div {
+    animation: cambioColor 3s infinite;
+  }
+  
+  @keyframes cambioColor {
+    0% {
+      color: rgb(255, 0, 0);
+    }
+    50% {
+      color: rgb(0, 255, 0);
+    }
+    100% {
+      color: rgb(0, 0, 255);
+    }
+  }
+
+.microprocesadorestitulo{
+    text-align: center;
+background-size: cover;
+text-decoration: dotted;
+}
+
+#info-contactos{
+    background-image: url(../multimedia/images/fondotabla.jpg);
+    background-size: cover;
+    text-align: left;
+}
+
+body{
+    background-image: url(../multimedia/images/fondotabla.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#tituloprincipal{
+    text-align: end;
+}
