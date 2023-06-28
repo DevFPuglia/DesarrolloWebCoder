@@ -96,12 +96,6 @@ background-size: cover;
 text-decoration: dotted;
 }
 
-#info-contactos{
-    background-image: url(../multimedia/images/fondotabla.jpg);
-    background-size: cover;
-    text-align: left;
-}
-
 body{
     background-image: url(../multimedia/images/fondotabla.jpg);
     background-size: cover;
