@@ -83,25 +83,28 @@ header .textos-header{
 
 /*About us */
 
-.contenedor-nuestro-servicio{
+.contenedor-nuestro-servicio {
     display: flex;
-    justify-content: space-evenly;
-}
-
-.imagen-about-us{
-    width: 48%;
-}
-
-.contenedor-sobre-nosotros .contenido-textos{
-    width: 48%;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+  }
+  
+  .imagen-about-us {
+    max-width: 50%;
+    height: auto;
+  }
+  
+  .contenido-textos {
+    flex: 1;
     text-align: left;
-}
-
-.contenido-textos h3{
+  }
+  
+  .contenido-textos h3 {
     margin-bottom: 15px;
-}
-
-.contenido-textos h3 span{
+  }
+  
+  .contenido-textos h3 span {
     background: #4d0686;
     color: #fff;
     border-radius: 50%;
@@ -111,14 +114,14 @@ header .textos-header{
     height: 30px;
     padding: 2px;
     box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
-    margin-right: 5px
-}
-
-.contenido-textos p{
+    margin-right: 5px;
+  }
+  
+  .contenido-textos p {
     padding: 0px 0px 30px 15px;
     font-weight: 300;
     text-align: justify;
-}
+  }
 
 /*Galeria*/
 
