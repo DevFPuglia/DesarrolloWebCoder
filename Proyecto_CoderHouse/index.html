@@ -10,10 +10,13 @@
 <body>
     <header>
         <nav>
-            <a href="">Inicio</a>
-            <a href="">Acerca de</a>
-            <a href="">Portafolio</a>
-            <a href="">Contacto</a>
+            <a href="./index.html">Inicio</a>
+            <a href="#sobre-nosotros">Acerca de</a>
+            <a href="#portafolio">Portafolio</a>
+            <a href="#nosotros">Contacto</a>
+            <a href="#" id="boton-flotante">
+                <img src="./Multimedia/Images/iconoinicio.png" alt="Ir a inicio" width="20px" height="20px">
+            </a>
         </nav>
         <section class="textos-header">
             <h1>Potencia tu negocio con fotografias profesionales</h1>
@@ -22,7 +25,7 @@
             <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-4.22,-6.39 C122.74,181.09 349.20,-49.98 501.97,15.30 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #fff;"></path></svg></div>
     </header>
     <main>
-        <section class="contenedor sobre nosotros">
+        <section id="sobre-nosotros" class="contenedor-sobre-nosotros">
             <h2 class="titulo">Nuestro servicio</h2>
             <div class="contenedor-nuestro-servicio">
                 <img src="./Multimedia/Images/ilustracion2.jpg" alt="fotografos" class="imagen-about-us">
@@ -35,7 +38,7 @@
             </div>
 
         </section>
-        <section class="portafolio">
+        <section id="portafolio" class="portafolio">
             <div class="contenedor">
                 <h2 class="titulo">Portafolio</h2>
                 <div class="galeria-port">
@@ -102,21 +105,23 @@
             <div class="clientes-contenedor">
                 <h2 class="titulo">Que dicen nuestros clientes</h2>
                 <div class="cards">
-                    <img src="./Multimedia/Images/barista1.jpg" alt="">
+                    <div class="card">
+                        <img src="./Multimedia/Images/barista1.jpg" alt="">
+                        <div class="contenido-texto">
+                        <h4>Name</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, inventore!</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./Multimedia/Images/barista2.jpg" alt="">
                     <div class="contenido-texto">
                         <h4>Name</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, inventore!</p>
                     </div>
-                    <div class="cards">
-                        <img src="./Multimedia/Images/barista2.jpg" alt="">
-                        <div class="contenido-texto">
-                            <h4>Name</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, inventore!</p>
-                        </div>
                 </div>
             </div>
         </section>
-        <section class="about-service">
+        <section id="nosotros" class="about-service">
             <div class="contenedor">
                 <h2 class="titulo">Nuestro servicio</h2>
                 <div class="servicio-cont">
@@ -142,19 +147,40 @@
     <footer>
         <div class="contenedor-footer">
             <div class="content-foo">
-                <h4>Phone</h4>
+                <h4>Telefono</h4>
                 <p>0800-1111-11-11</p>
             </div>
             <div class="content-foo">
                 <h4>Email</h4>
-                <p>email@gmail.com</p>
+                <p>emaildealguien@gmail.com</p>
             </div>
             <div class="content-foo">
                 <h4>Location</h4>
-                <p>Quilmes, Buenos Aires, Argentina</p>
+                <p>Buenos Aires, Argentina</p>
             </div>
         </div>
         <h2 class="titulo-final">&copy; Proyecto CoderHouse | Puglia Francisco </h2>
     </footer>
 </body>
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function() {
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 100) {
+      $('#boton-flotante').fadeIn();
+    } else {
+      $('#boton-flotante').fadeOut();
+    }
+  });
+
+  $('#boton-flotante').click(function() {
+    $('html, body').animate({ scrollTop: 0 }, 'slow');
+    return false;
+  });
+});
+</script>
+
 </html>
