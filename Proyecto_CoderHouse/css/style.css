@@ -219,7 +219,7 @@ header .textos-header{
 
 .about-service{
     background: #f2f2f2;
-    padding-bottom: 30p;
+    padding-bottom: 30px;
 }
 
 .servicio-cont{
@@ -435,4 +435,24 @@ footer{
   
   #boton-flotante img {
     vertical-align: middle;
+  }
+
+  /* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    .contenedor-nuestro-servicio {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .imagen-about-us {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+  
+    .contenido-textos {
+      width: 100%;
+      text-align: center;
+    }
   }
